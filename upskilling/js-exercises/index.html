@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS Exercises — Local Community Event Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- jQuery (used in Task 14 example) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Community Event Portal (JS Exercises)</h1>
+  </header>
+
+  <main>
+    <section id="eventsSection">
+      <h2>Upcoming Events</h2>
+      <div id="spinner" class="hidden">Loading events...</div>
+      <div id="eventsList"></div>
+
+      <label for="categoryFilter">Filter by category:</label>
+      <select id="categoryFilter">
+        <option value="all">All</option>
+      </select>
+
+      <label for="searchInput">Search by name:</label>
+      <input id="searchInput" placeholder="Type and press Enter">
+    </section>
+
+    <section id="registerSection">
+      <h2>Register for an event</h2>
+      <form id="registerForm">
+        <label for="regName">Name</label>
+        <input id="regName" name="name" required>
+
+        <label for="regEmail">Email</label>
+        <input id="regEmail" name="email" type="email" required>
+
+        <label for="selectEvent">Event</label>
+        <select id="selectEvent" name="event"></select>
+
+        <button id="registerBtn" type="submit">Register</button>
+      </form>
+      <div id="regMessage"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Open DevTools Console to see logs and errors.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

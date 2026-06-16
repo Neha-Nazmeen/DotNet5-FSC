@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 5 Exercises - CDN Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+      body { padding-top: 4.5rem; }
+      .example-section { padding: 2rem 0; border-bottom: 1px solid #eee; }
+    </style>
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">BS5 Exercises</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item"><a class="nav-link active" href="#grid">Grid</a></li>
+        <li class="nav-item"><a class="nav-link" href="#forms">Forms</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cards">Cards</a></li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <section id="setup" class="example-section">
+    <h2>1. Setting up Bootstrap (CDN)</h2>
+    <p>Linked Bootstrap CSS and JS via CDN. The page also includes Bootstrap Icons.</p>
+  </section>
+
+  <section id="grid" class="example-section">
+    <h2>3 & 4. Grid Layouts</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 border p-3">Col 1</div>
+        <div class="col-12 col-sm-6 col-md-4 border p-3">Col 2</div>
+        <div class="col-12 col-sm-6 col-md-4 border p-3">Col 3</div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-3 bg-light p-3">Sidebar (col-md-3)</div>
+        <div class="col-md-9 bg-white p-3">Content (col-md-9)</div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-6 col-sm-3 p-2 border">A</div>
+        <div class="col-6 col-sm-3 p-2 border">B</div>
+        <div class="col-6 col-sm-3 p-2 border">C</div>
+        <div class="col-6 col-sm-3 p-2 border">D</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="alignment" class="example-section">
+    <h2>5. Alignment & Reordering</h2>
+    <div class="row justify-content-center align-items-center" style="height:120px; background:#f8f9fa;">
+      <div class="col-4 text-center">Centered</div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-12 col-md-6 order-md-2 bg-info p-2">Order MD 2</div>
+      <div class="col-12 col-md-6 order-md-1 bg-warning p-2">Order MD 1</div>
+    </div>
+  </section>
+
+  <section id="flex" class="example-section">
+    <h2>6. Flex utilities</h2>
+    <div class="d-flex flex-column flex-md-row bg-light p-3 gap-2">
+      <div class="p-2 bg-primary text-white">Item 1</div>
+      <div class="p-2 bg-secondary text-white">Item 2</div>
+      <div class="p-2 bg-success text-white">Item 3</div>
+    </div>
+
+    <div class="card mt-2">
+      <div class="card-body d-flex justify-content-between align-items-center">
+        <div>
+          <h5 class="card-title mb-0">Card</h5>
+          <p class="mb-0 text-muted">Subtitle</p>
+        </div>
+        <button class="btn btn-primary">Action</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="typography" class="example-section">
+    <h2>7. Typography</h2>
+    <h1 class="display-1">Display 1</h1>
+    <p class="lead">Lead paragraph.</p>
+    <p class="text-muted">Muted.</p>
+    <p class="fw-bold">Bold text.</p>
+    <p class="text-uppercase">Uppercase</p>
+    <p class="text-lowercase">LOWERCASE</p>
+    <p class="text-capitalize">capitalize each word</p>
+  </section>
+
+  <section id="forms" class="example-section">
+    <h2>8. Forms</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label class="form-label">First name</label>
+        <input class="form-control" placeholder="John">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Last name</label>
+        <input class="form-control" placeholder="Doe">
+      </div>
+      <div class="col-12">
+        <div class="input-group">
+          <span class="input-group-text">@</span>
+          <input class="form-control" type="email" placeholder="you@example.com">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="terms">
+          <label class="form-check-label" for="terms">Agree to terms</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Register</button>
+      </div>
+    </form>
+
+    <h3 class="mt-4">Login (floating)</h3>
+    <form style="max-width:420px;">
+      <div class="form-floating mb-2">
+        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+        <label for="floatingEmail">Email address</label>
+      </div>
+      <div class="form-floating mb-2">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <button class="btn btn-success">Login</button>
+    </form>
+  </section>
+
+  <section id="buttons" class="example-section">
+    <h2>9. Buttons</h2>
+    <div class="mb-2">
+      <button class="btn btn-primary me-1">Primary</button>
+      <button class="btn btn-secondary me-1">Secondary</button>
+      <button class="btn btn-outline-success me-1">Outline Success</button>
+      <button class="btn btn-outline-danger">Outline Danger</button>
+    </div>
+    <div class="btn-group" role="group">
+      <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck1">Toggle 1</label>
+
+      <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck2">Toggle 2</label>
+    </div>
+  </section>
+
+  <section id="navs" class="example-section">
+    <h2>10. Navbars & Navs</h2>
+    <nav class="d-flex flex-column flex-md-row align-items-center">
+      <a class="me-3" href="#">Brand</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+      </ul>
+      <form class="d-flex ms-auto" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </nav>
+  </section>
+
+  <section id="cards" class="example-section">
+    <h2>11. Cards & Media</h2>
+    <div class="card" style="width: 18rem;">
+      <img src="images/profile-286x180.svg" class="card-img-top" alt="Profile">
+      <div class="card-body">
+        <h5 class="card-title">Profile</h5>
+        <p class="card-text">Short bio.</p>
+      </div>
+    </div>
+
+    <div class="d-flex align-items-start mt-3">
+      <img src="images/photo-200.svg" width="64" height="64" class="me-3 rounded" alt="Media">
+      <div>
+        <h6>Media heading</h6>
+        <p class="mb-0">Content to the right of the image.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="spacing" class="example-section">
+    <h2>12. Spacing Utilities</h2>
+    <div class="m-3 p-2 border">Margin m-3 + padding p-2</div>
+
+    <h3 class="mt-4">Pricing</h3>
+    <div class="row">
+      <div class="col-md-4 p-3">
+        <div class="card p-3">
+          <h4>Basic</h4>
+          <p class="lead">$0</p>
+        </div>
+      </div>
+      <div class="col-md-4 p-3">
+        <div class="card p-3 shadow-lg rounded-pill">
+          <h4>Pro</h4>
+          <p class="lead">$9</p>
+        </div>
+      </div>
+      <div class="col-md-4 p-3">
+        <div class="card p-3">
+          <h4>Enterprise</h4>
+          <p class="lead">Contact</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="colors" class="example-section">
+    <h2>13. Colors & Backgrounds</h2>
+    <div class="p-3 bg-primary text-white">Primary box</div>
+    <div class="p-3 bg-dark bg-gradient text-white mt-2">Dark gradient</div>
+  </section>
+
+  <section id="display" class="example-section">
+    <h2>14. Display & Visibility</h2>
+    <div class="d-none d-md-block p-2 bg-light">Hidden on small, visible md+</div>
+    <div class="d-md-none p-2 bg-secondary text-white">Visible only on small</div>
+  </section>
+
+  <section id="borders" class="example-section">
+    <h2>15. Borders & Shadows</h2>
+  <img src="images/avatar-120.svg" class="border border-primary border-3 rounded-circle" alt="avatar">
+    <div class="card shadow-lg rounded-pill mt-3 p-3">Card with shadow and rounded-pill</div>
+  </section>
+
+  <section id="position" class="example-section">
+    <h2>16. Positioning</h2>
+    <div style="position:relative; display:inline-block;">
+      <img src="images/photo-200.svg" alt="pic">
+      <span class="badge bg-danger" style="position:absolute; top:8px; right:8px;">New</span>
+    </div>
+  </section>
+
+  <section id="icons" class="example-section">
+    <h2>17. Bootstrap Icons</h2>
+    <p><i class="bi bi-facebook me-2"></i><i class="bi bi-twitter me-2"></i><i class="bi bi-instagram"></i></p>
+    <p><button class="btn btn-primary"><i class="bi bi-heart"></i></button> <button class="btn btn-outline-secondary"><i class="bi bi-share"></i></button></p>
+  </section>
+
+  <section id="plugins" class="example-section">
+    <h2>18. JS Plugins</h2>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Open Modal</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">Modal body text</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion mt-3" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Accordion item</button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">Accordion content.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sass" class="example-section">
+    <h2>19. Sass customization</h2>
+    <p>See <code>src/scss/_variables.scss</code> and <code>src/scss/main.scss</code>. Run the npm scripts in README to compile custom Bootstrap CSS.</p>
+  </section>
+
+</main>
+
+<footer class="text-center py-4 fixed-bottom bg-light">
+  <small class="text-muted">Bootstrap 5 Exercises demo • CDN</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

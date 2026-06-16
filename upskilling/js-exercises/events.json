@@ -1,0 +1,6 @@
+[
+  { "id":"100", "name":"Community Concert", "date":"2026-07-10", "seats":120, "category":"music", "location":"Riverside Park" },
+  { "id":"101", "name":"Farmers Market", "date":"2026-06-25", "seats":80, "category":"market", "location":"Town Square" },
+  { "id":"102", "name":"Charity Run", "date":"2025-05-01", "seats":0, "category":"sports", "location":"City Track" },
+  { "id":"103", "name":"Baking Workshop", "date":"2026-08-05", "seats":25, "category":"workshop", "location":"Community Center" }
+]

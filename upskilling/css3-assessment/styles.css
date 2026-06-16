@@ -1,0 +1,118 @@
+/*
+  styles.css - External stylesheet for CSS3 assessment
+  Sections labeled to match exercise requirements
+*/
+
+/* Header styles */
+.site-header {
+  background: rgba(10, 22, 39, 0.02);
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  margin-bottom: 1rem;
+  font-family: 'Inter', system-ui, Arial, sans-serif;
+}
+.site-header h1 { margin: 0; font-size: 1.75rem; }
+
+/* Navigation styles */
+.main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; }
+.main-nav a { text-decoration: none; color: #0b5ed7; }
+.main-nav a:hover { text-decoration: underline; }
+
+/* Typography and body base */
+/* Body/base styles (defined externally; embedded body background applied in <head>) */
+body { font-family: 'Inter', system-ui, Arial, sans-serif; color: #102a43; line-height: 1.5; }
+.container { width: 90%; max-width: 1000px; margin: 0 auto; }
+
+/* CTA button styles */
+/* Style for main CTA button */
+.cta-button {
+  display: inline-block;
+  background-color: #007BFF; /* hex example */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.cta-button:hover { background-color: rgba(0,123,255,0.85); }
+
+/* Event card styles */
+/* Styles for event container */
+.eventCard {
+  border: 1px solid rgba(16,42,67,0.06);
+  padding: 1rem;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.9);
+  margin-bottom: 1rem;
+}
+.eventCard .event-title { margin-top: 0; }
+
+/* Grouping selector example: h3 and p share style */
+h3, p { color: rgba(16,42,67,0.9); }
+
+/* Use universal selector to reset margins/padding (Selectors Playground) */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Color & background styling */
+.news-section { background: rgba(10, 132, 255, 0.04); padding: 1rem; border-radius: 6px; }
+.section-title { padding: 0.5rem 0; background: linear-gradient(90deg, #e0f2ff, #fff); display:inline-block; border-radius:4px; }
+
+/* Background image with fallback color */
+body {
+  background-color: #f0f4f8; /* fallback */
+  background-image: url('images/city-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Typography controls */
+.description { font-size: 0.95rem; letter-spacing: 0.2px; line-height: 1.6; text-align: left; }
+
+/* Links and lists */
+/* Link states */
+a:link { color: #0b5ed7; }
+a:visited { color: #3b5bdb; }
+a:hover { color: #084298; text-decoration: underline; }
+a:active { color: #072b5a; }
+
+/* Lists */
+.event-meta { list-style-type: none; padding-left: 0; display: flex; gap: 1rem; }
+
+/* Table styling */
+.events-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+.events-table th, .events-table td { border: 1px solid rgba(16,42,67,0.08); padding: 0.5rem; text-align: center; }
+.events-table tbody tr:nth-child(even) { background: rgba(0,0,0,0.03); }
+
+/* Box model: spacing for event cards */
+.eventCard { margin: 1rem 0; padding: 1rem; border: 1px solid rgba(16,42,67,0.06); }
+
+/* Outline for form inputs when focused */
+.form-input:focus { outline: 3px solid rgba(0,123,255,0.15); }
+
+/* Visibility comparison - helper classes */
+.hidden { visibility: hidden; }
+.none { display: none; }
+
+/* Multi-column layout for news article */
+.news-article .news-content {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  padding: 0.5rem 0;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+  .main-nav ul { flex-direction: column; gap: 0.5rem; }
+  .events-grid { display: block; }
+  .eventCard { width: 100%; }
+  body { font-size: 15px; }
+}
+
+/* Desktop layout using grid/flex (bonus) */
+.events-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+
+/* Comments showing a section for table styles */
+/* Table styles */
+/* ...existing code... */

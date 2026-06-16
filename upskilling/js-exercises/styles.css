@@ -1,0 +1,7 @@
+body{ font-family: Arial, sans-serif; margin:0; padding:1rem; background:#fff; color:#222 }
+header h1{ margin:0 0 1rem 0 }
+.event-card{ border:1px solid #ddd; padding:.75rem; margin:.5rem 0; border-radius:6px }
+.hidden{ display:none }
+#spinner{ color:#0d6efd }
+.reg-btn{ background:#0d6efd;color:#fff;padding:.4rem .6rem;border-radius:4px;border:none }
+

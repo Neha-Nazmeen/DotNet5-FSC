@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS3 Exercises — Local Community Event Portal</title>
+
+    <!-- Google Font via link (exercise allows @import or <link>) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Embedded <style> to set body background as required in Exercise 1 -->
+    <style>
+      /* Embedded style: body background (Exercise 1) */
+      body { background: linear-gradient(180deg, #f5f7fb 0%, #ffffff 100%); }
+    </style>
+
+    <!-- External stylesheet for reusable styles -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header id="mainHeader" class="site-header">
+      <!-- Inline style to make this one heading red (Exercise 1) -->
+      <h1 style="color: red;">Local Community Event Portal</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="events" class="section events-section">
+        <h2 class="section-title">Upcoming Events</h2>
+
+        <div class="events-grid">
+          <article class="eventCard">
+            <h3 class="event-title">Summer Concert</h3>
+            <p class="description">Join us for a night of music at the riverside park. Food vendors and family activities available.</p>
+            <ul class="event-meta">
+              <li>Date: July 10</li>
+              <li>Location: Riverside Park</li>
+            </ul>
+            <a href="#" class="cta-button">Register</a>
+          </article>
+
+          <article class="eventCard">
+            <h3 class="event-title">Farmers Market</h3>
+            <p class="description">Fresh produce and crafts from local vendors every Saturday.</p>
+            <ul class="event-meta">
+              <li>Date: Weekly</li>
+              <li>Location: Town Square</li>
+            </ul>
+            <a href="#" class="cta-button">Learn more</a>
+          </article>
+        </div>
+
+        <h3>Admin Events Table</h3>
+        <table class="events-table">
+          <thead>
+            <tr><th>ID</th><th>Event</th><th>Attendees</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Summer Concert</td><td>150</td><td>Open</td></tr>
+            <tr><td>2</td><td>Farmers Market</td><td>200</td><td>Open</td></tr>
+            <tr><td>3</td><td>Charity Run</td><td>320</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="news" class="section news-section">
+        <h2 class="section-title">Community Bulletin</h2>
+        <article class="news-article">
+          <h3>City Improvements</h3>
+          <p class="news-content">The city council approved funding for park renovations. Volunteers are invited to participate in the planting weekend. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+      </section>
+
+      <section id="signup" class="section signup-section">
+        <h2 class="section-title">Sign up for updates</h2>
+        <form class="signup-form">
+          <label for="name">Name</label>
+          <input id="name" class="form-input" type="text" placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input id="email" class="form-input" type="email" placeholder="you@example.com">
+
+          <button class="cta-button">Subscribe</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>Connect with us: <a href="#" class="social-link">Facebook</a> • <a href="#" class="social-link">Twitter</a></p>
+    </footer>
+
+  </body>
+</html>

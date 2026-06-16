@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Community Event Portal</title>
+  <!-- Navigation, Main, Footer sections below -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <a href="#home">Home</a> |
+      <a href="#events">Events</a> |
+      <a href="#contact">Contact</a> |
+      <a href="help.html" target="_blank">Help (new tab)</a>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Welcome Banner -->
+    <section id="home">
+      <div id="welcomeBanner">
+        <h1>Welcome, <span class="highlight">Resident</span>!</h1>
+        <p>Thank you for visiting the Local Community Event Portal. <span style="color:red;font-weight:bold;">Special Offer:</span> First 50 registrants get a free T‑shirt.</p>
+      </div>
+    </section>
+
+    <!-- Events gallery -->
+    <section id="events">
+      <h2>Community Events Gallery</h2>
+      <table class="gallery">
+        <caption>Past community events</caption>
+        <tbody>
+          <tr>
+            <td>
+              <figure>
+                <img src="images/event1.svg" alt="Park Cleanup" title="Park Cleanup" class="event-img">
+                <figcaption>Park Cleanup — Volunteers</figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img src="images/event2.svg" alt="Summer Concert" title="Summer Concert" class="event-img">
+                <figcaption>Summer Concert</figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img src="images/event3.svg" alt="Farmers Market" title="Farmers Market" class="event-img">
+                <figcaption>Farmers Market</figcaption>
+              </figure>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <figure>
+                <img src="images/event4.svg" alt="Charity Run" title="Charity Run" class="event-img">
+                <figcaption>Charity Run</figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img src="images/event5.svg" alt="Art Fair" title="Art Fair" class="event-img">
+                <figcaption>Art Fair</figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img src="images/event6.svg" alt="Food Festival" title="Food Festival" class="event-img">
+                <figcaption>Food Festival</figcaption>
+              </figure>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Registration form -->
+    <section id="register">
+      <h2>Event Registration</h2>
+      <form id="registrationForm">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" placeholder="Jane Doe" required autofocus>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="1234567890">
+        <small id="phoneError" class="error"></small>
+
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date" required>
+
+        <label for="eventType">Event Type</label>
+        <select id="eventType" name="eventType">
+          <option value="concert">Concert</option>
+          <option value="market">Market</option>
+          <option value="run">Charity Run</option>
+        </select>
+        <div>Fee: <span id="eventFee">Free</span></div>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Any requirements or notes..."></textarea>
+        <div>Characters: <span id="charCount">0</span></div>
+
+        <button id="submitBtn" type="submit">Register</button>
+        <button id="clearPreferences" type="button">Clear Preferences</button>
+
+        <output id="confirmation" name="confirmation"></output>
+      </form>
+    </section>
+
+    <!-- Contact / Geolocation -->
+    <section id="contact">
+      <h2>Contact & Find Nearby Events</h2>
+      <button id="findNearby">Find Nearby Events</button>
+      <div id="geoResult"></div>
+    </section>
+
+    <!-- Video invite -->
+    <section id="video">
+      <h2>Event Promo</h2>
+      <video id="promoVideo" controls width="480" poster="images/video-poster.svg">
+        <!-- Add a local video file at media/promo.mp4 if available -->
+        <source src="media/promo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div id="videoStatus" class="note"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>City Council — Local Community Event Portal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

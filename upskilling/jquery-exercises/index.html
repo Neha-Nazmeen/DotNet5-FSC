@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery Exercises</title>
+  <!-- 1) CDN include (example) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- 2) Local fallback / local copy (the local shim will only define $ if CDN isn't available) -->
+  <script src="vendor/jquery-local.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container" style="max-width:900px;margin:2rem auto;font-family:Arial,sans-serif;">
+    <h1>Original Heading</h1>
+    <p id="p1">Paragraph one: visible.</p>
+    <p id="p2">Paragraph two: will be hidden by button.</p>
+    <button id="hideBtn" class="btn">Hide paragraph 2</button>
+
+    <hr>
+    <h2>Exercise 3 — Boxes and jQuery methods</h2>
+    <div>
+      <button id="hideBoxBtn" class="btn">Hide boxes (.hide)</button>
+      <button id="showBoxBtn" class="btn">Show boxes (.show)</button>
+      <button id="fadeOutBtn" class="btn">Fade out (.fadeOut)</button>
+      <button id="fadeInBtn" class="btn">Fade in (.fadeIn)</button>
+      <button id="toggleBtn" class="btn">Toggle (.toggle)</button>
+    </div>
+    <div style="display:flex;gap:1rem;margin-top:1rem;">
+      <div class="box" style="width:80px;height:80px;background:#ffdddd;display:flex;align-items:center;justify-content:center;">A</div>
+      <div class="box" style="width:80px;height:80px;background:#ddffdd;display:flex;align-items:center;justify-content:center;">B</div>
+      <div class="box" style="width:80px;height:80px;background:#ddddff;display:flex;align-items:center;justify-content:center;">C</div>
+    </div>
+
+    <hr>
+    <h2>Exercise 4 — DOM creation</h2>
+    <form id="addForm">
+      <input id="itemInput" placeholder="New item" required>
+      <button type="submit" class="btn">Add item</button>
+    </form>
+    <button id="removeAll" class="btn">Remove All</button>
+    <ul id="items"></ul>
+
+    <hr>
+    <h2>Exercise 5 — Color box</h2>
+    <button id="colorBtn" class="btn">Make red</button>
+    <div id="colorBox" style="width:120px;height:80px;border:1px solid #ccc;margin-top:.5rem;background:white;"></div>
+
+    <hr>
+    <h2>Exercise 6 — Event helpers</h2>
+    <div id="eventDiv" style="padding:1rem;border:1px solid #ccc;">Hover, click, double-click me</div>
+    <input id="keyInput" placeholder="Type here to trigger keypress" style="display:block;margin-top:.5rem;">
+    <div id="keyLog" style="margin-top:.5rem;color:#555;"></div>
+
+    <hr>
+    <p id="hello">Hello World!</p>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
