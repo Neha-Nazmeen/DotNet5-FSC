@@ -1,4 +1,4 @@
-package com.example.algods.forecast;
+package main.java.com.example.algods.forecast;
 
 public class TestForecast {
     public static void main(String[] args) {

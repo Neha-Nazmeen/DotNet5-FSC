@@ -1,4 +1,4 @@
-package com.example.algods.search;
+package main.java.com.example.algods.search;
 
 public class Product implements Comparable<Product> {
     private final int productId;

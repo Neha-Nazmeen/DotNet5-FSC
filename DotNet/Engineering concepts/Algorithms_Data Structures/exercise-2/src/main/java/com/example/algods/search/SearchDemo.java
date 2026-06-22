@@ -1,4 +1,4 @@
-package com.example.algods.search;
+package main.java.com.example.algods.search;
 
 import java.util.Arrays;
 
