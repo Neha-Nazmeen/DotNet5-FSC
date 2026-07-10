@@ -1,0 +1,13 @@
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\bin\Debug\net8.0\CustomerCommLib.deps.json
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\bin\Debug\net8.0\CustomerCommLib.dll
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\bin\Debug\net8.0\CustomerCommLib.pdb
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\obj\Debug\net8.0\CustomerCommLib.csproj.AssemblyReference.cache
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\obj\Debug\net8.0\CustomerCommLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\obj\Debug\net8.0\CustomerCommLib.AssemblyInfoInputs.cache
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\obj\Debug\net8.0\CustomerCommLib.AssemblyInfo.cs
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\obj\Debug\net8.0\CustomerCommLib.csproj.CoreCompileInputs.cache
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\obj\Debug\net8.0\CustomerCommLib.sourcelink.json
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\obj\Debug\net8.0\CustomerCommLib.dll
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\obj\Debug\net8.0\refint\CustomerCommLib.dll
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\obj\Debug\net8.0\CustomerCommLib.pdb
+C:\Users\syedn\OneDrive\Desktop\DotNet FSE\DotNet\Deepskilling\NUnit and Moq\1. Moq-Handson\obj\Debug\net8.0\ref\CustomerCommLib.dll

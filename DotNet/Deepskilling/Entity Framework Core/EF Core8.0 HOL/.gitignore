@@ -1,0 +1,22 @@
+## .NET build output
+bin/
+obj/
+out/
+
+## Rider / VS / VS Code
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.user
+*.suo
+
+## EF Core
+Migrations/*.Designer.cs.bak
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Logs
+*.log

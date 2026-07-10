@@ -1,0 +1,13 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.dll
+*.pdb
+exception_log.txt
+
+## OS
+.DS_Store
+Thumbs.db
