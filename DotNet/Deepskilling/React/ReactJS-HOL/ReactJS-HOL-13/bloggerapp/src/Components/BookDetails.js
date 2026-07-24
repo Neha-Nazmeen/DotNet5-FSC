@@ -1,0 +1,21 @@
+import React from "react";
+
+function BookDetails({ books }) {
+  // Conditional rendering with if/else (early return)
+  if (!books || books.length === 0) {
+    return <p>No books available.</p>;
+  }
+
+  return (
+    <div>
+      <h2>Book Details</h2>
+      <ul>
+        {books.map((book, index) => (
+          <li key={index}>{book}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default BookDetails;

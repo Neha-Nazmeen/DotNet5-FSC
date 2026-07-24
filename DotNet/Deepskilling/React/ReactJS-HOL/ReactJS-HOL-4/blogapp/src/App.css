@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.posts {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.post {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
