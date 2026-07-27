@@ -1,0 +1,43 @@
+{
+  "courses": [
+    { "id": 1, "name": "Data Structures", "code": "CS101", "credits": 4, "gradeStatus": "passed" },
+    { "id": 2, "name": "Operating Systems", "code": "CS201", "credits": 3, "gradeStatus": "pending" },
+    { "id": 3, "name": "Database Systems", "code": "CS301", "credits": 3, "gradeStatus": "passed" },
+    { "id": 4, "name": "Computer Networks", "code": "CS302", "credits": 4, "gradeStatus": "failed" },
+    { "id": 5, "name": "Software Engineering", "code": "CS401", "credits": 3, "gradeStatus": "pending" },
+    { "id": 6, "name": "Web Development", "code": "CS210", "credits": 3, "gradeStatus": "passed" },
+    { "id": 7, "name": "Artificial Intelligence", "code": "CS410", "credits": 4, "gradeStatus": "pending" },
+    { "id": 8, "name": "Discrete Mathematics", "code": "MA102", "credits": 3, "gradeStatus": "passed" },
+    { "id": 9, "name": "Computer Architecture", "code": "CS220", "credits": 3, "gradeStatus": "failed" },
+    { "id": 10, "name": "Cloud Computing", "code": "CS420", "credits": 3, "gradeStatus": "pending" },
+    { "id": 11, "name": "Mobile App Development", "code": "CS330", "credits": 3, "gradeStatus": "passed" },
+    { "id": 12, "name": "Cyber Security Fundamentals", "code": "CS350", "credits": 4, "gradeStatus": "pending" }
+  ],
+  "students": [
+    { "id": 1, "name": "Alex Johnson", "email": "alex.johnson@example.com", "semester": "Odd", "gpa": 3.8 },
+    { "id": 2, "name": "Priya Sharma", "email": "priya.sharma@example.com", "semester": "Even", "gpa": 3.6 },
+    { "id": 3, "name": "Michael Chen", "email": "michael.chen@example.com", "semester": "Odd", "gpa": 3.4 },
+    { "id": 4, "name": "Sara Williams", "email": "sara.williams@example.com", "semester": "Even", "gpa": 3.9 },
+    { "id": 5, "name": "Rahul Verma", "email": "rahul.verma@example.com", "semester": "Odd", "gpa": 3.2 }
+  ],
+  "enrollments": [
+    { "id": 1, "studentId": 1, "courseId": 1 },
+    { "id": 2, "studentId": 1, "courseId": 3 },
+    { "id": 3, "studentId": 1, "courseId": 6 },
+    { "id": 4, "studentId": 2, "courseId": 2 },
+    { "id": 5, "studentId": 2, "courseId": 5 },
+    { "id": 6, "studentId": 3, "courseId": 4 },
+    { "id": 7, "studentId": 3, "courseId": 7 },
+    { "id": 8, "studentId": 4, "courseId": 8 },
+    { "id": 9, "studentId": 4, "courseId": 11 },
+    { "id": 10, "studentId": 5, "courseId": 9 },
+    { "id": 11, "studentId": 5, "courseId": 10 },
+    { "id": 12, "studentId": 5, "courseId": 12 }
+  ],
+  "notifications": [
+    { "id": 1, "studentId": 1, "message": "Enrollment for CS101 confirmed.", "read": true },
+    { "id": 2, "studentId": 1, "message": "Grades for CS301 have been posted.", "read": false },
+    { "id": 3, "studentId": 2, "message": "New course CS420 (Cloud Computing) now open for enrollment.", "read": false },
+    { "id": 4, "studentId": 3, "message": "Reminder: CS302 assignment due Friday.", "read": false }
+  ]
+}

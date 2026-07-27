@@ -1,0 +1,15 @@
+Hands-On 1 - Task 1, Step 2: One-line notes on generated files
+
+angular.json         - Workspace configuration: build targets, file paths, budgets, and CLI options for the project.
+tsconfig.json         - Base TypeScript compiler configuration shared across the app and spec builds.
+tsconfig.app.json      - TypeScript config specific to building the application bundle (extends tsconfig.json).
+package.json          - Lists project dependencies, devDependencies, and npm scripts (start, build, test).
+src/main.ts           - Entry point that bootstraps the root AppComponent (standalone, no NgModule needed in v20).
+src/app/app.config.ts    - Standalone app configuration: providers for router, HttpClient, Store, etc. (replaces app.module.ts).
+src/app/app.component.ts  - The root component of the application; hosts the router outlet.
+src/index.html         - The single HTML page shell that hosts the Angular app via <app-root>.
+
+Step 5: angular.json budgets (architect > build > configurations > production)
+- maximumWarning: build shows a warning in the console if the bundle exceeds this size.
+- maximumError: build fails with an error if the bundle exceeds this size.
+These thresholds keep the production bundle size in check and catch bloat early.

@@ -1,0 +1,17 @@
+.card {
+  border: 1px solid #ddd;
+  border-left: 4px solid grey;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background: #fff;
+  transition: max-height 0.2s ease;
+}
+.card--enrolled { background: #eef8ee; }
+.card--full { border-right: 2px dashed #d64545; }
+.card.expanded { box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.badge { padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.8rem; color: #fff; }
+.badge--green { background: #2e8b57; }
+.badge--red { background: #d64545; }
+.badge--grey { background: #888; }
+.actions { display: flex; gap: 0.5rem; margin-top: 0.5rem; }

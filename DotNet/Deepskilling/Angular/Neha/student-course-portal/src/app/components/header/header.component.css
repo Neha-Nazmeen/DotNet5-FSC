@@ -1,0 +1,11 @@
+.navbar {
+  background: #1f2a44;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.brand { font-weight: 700; margin-right: 1rem; }
+.navbar a { color: #cdd6ec; text-decoration: none; }
+.navbar a.active { color: #fff; font-weight: 600; }
